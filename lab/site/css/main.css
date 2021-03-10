@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap');
+
+:root {
+  --c-white: #fff;
+  --c-gray: #888888;
+  --c-green: #00C483;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  background-color: #1D1F21;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  color: var(--c-white);
+  line-height: 1.5;
+}
+
+
+a {
+  color: var(--c-green);
+}
+
+/* ==== Positioning ==== */
+
+.pd-top-lg {
+  margin-top: 50;
+}
+
+.pd-btm-lg {
+  margin-bottom: 50;
+}
+
+.pd-top {
+  margin-top: 20;
+}
+
+.pd-btm {
+  margin-bottom: 20;
+}
+
+.pd-left {
+  margin-left: 20;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-items: center;
+}
+
+/* ==== Typography ==== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.title {
+  color: var(--c-white);
+}
+
+.subtitle {
+  color: var(--c-green)
+}
+
+.text {
+  color: var(--c-gray)
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img {
+  width: 40;
+  height: 40;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  width: 100%;
+}
+
+/* ==== skill ==== */
+
+.skill-flex {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+body > div > div.pd-left > ul > li {
+  margin-left: 1% 1%;
+  width: 300;
+  font-weight: 300;
+  color: var(--c-gray)
+}
