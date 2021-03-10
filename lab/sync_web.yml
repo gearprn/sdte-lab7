@@ -1,6 +1,30 @@
-- hosts: web
+- hosts: host01
   tasks:
   - name: "copy website"
     copy:
       src: site/
       dest: /var/www/default
+
+- hosts: host02
+  tasks:
+  - name: "copy website"
+    copy:
+      src: site/
+      dest: /var/www/default
+  - name: "Replace content"
+    replace:
+      path: /var/www/default/css/main.css
+      regexp: "#00C483"
+      replace: "#c46900"
+
+- hosts: host03
+  tasks:
+  - name: "copy website"
+    copy:
+      src: site/
+      dest: /var/www/default
+  - name: "Replace content"
+    replace:
+      path: /var/www/default/css/main.css
+      regexp: "#00C483"
+      replace: "#c48d005c"
